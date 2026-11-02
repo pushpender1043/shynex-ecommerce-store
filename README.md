@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🛍️ SHYNEX
@@ -14,7 +13,7 @@
 
 > **"Where Premium Fashion Meets Modern Technology."**
 
-[🌐 Live Demo](https://shynex-demo-link.com) · [🐞 Report Issue](https://github.com/your-username/shynex/issues) · [📦 Request Feature](https://github.com/your-username/shynex/issues)
+[🌐 Live Demo](https://shynex-6ejo.vercel.app) · [🐞 Report Issue](https://github.com/pushpender1043/Shynex_EcommerceStore/issues) · [📦 Request Feature](https://github.com/pushpender1043/Shynex_EcommerceStore/issues)
 
 </div>
 
@@ -35,35 +34,34 @@ Designed for the modern user who values speed, aesthetics, and security.
 | **⚡ Performance** | Optimized backend with **Node.js & Express**, fast data retrieval from **MongoDB**. |
 | **🧠 State Mgmt** | Complex state handling (Cart, User, Products) using **Redux Toolkit**. |
 | **🎨 UI/UX** | Responsive design that looks premium on Mobile, Tablet, and Desktop. |
-| **👨‍💻 Admin Panel** | (Optional) Dashboard to manage products, inventory, and orders. |
+| **👨‍💻 Admin Panel** | Dedicated dashboard to manage products, inventory, and user orders. |
 
 ## 🛠️ The Tech Stack
 
 Shynex is powered by the industry-standard **MERN** architecture:
 
-* **Frontend:** `React.js` (Hooks, Functional Components)
-* **Styling:** `Styled Components` / `Tailwind CSS` / `CSS3`
-* **State Management:** `Redux Toolkit` + `Redux Thunk`
-* **Backend:** `Node.js` + `Express.js`
-* **Database:** `MongoDB` (NoSQL)
-* **Authentication:** `Firebase SDK`
-* **Version Control:** `Git` & `GitHub`
+- **Frontend & Admin:** `React.js` + `Vite`
+- **Styling:** `Tailwind CSS` / `CSS3`
+- **State Management:** `Redux Toolkit`
+- **Backend:** `Node.js` + `Express.js`
+- **Database:** `MongoDB`
+- **Authentication:** `Firebase`
 
 ## 📂 Architecture
 
 ```text
-shynex-project/
-├── client/                 # Frontend React Application
+Shynex_EcommerceStore/
+├── frontend/               # Customer-facing React Application
 │   ├── src/
-│   │   ├── components/     # Reusable UI (Navbar, Cards)
-│   │   ├── pages/          # Route Pages (Home, Shop, Cart)
-│   │   ├── redux/          # Slices and Store configuration
-│   │   └── firebase.js     # Auth configuration
-│   └── public/
-├── server/                 # Backend Node/Express Application
-│   ├── config/             # DB Connection & Env
-│   ├── controllers/        # Route Logic
-│   ├── models/             # Mongoose Schemas (User, Product)
-│   ├── routes/             # API Endpoints
-│   └── server.js           # Server Entry Point
-└── README.md
+│   │   ├── components/     # Reusable UI elements
+│   │   ├── pages/          # Home, Shop, Cart, Checkout
+│   │   └── redux/          # State slices and store
+├── admin_panel/            # Admin Dashboard (React)
+│   ├── src/
+│   │   ├── components/     # Dashboard UI, Sidebar, Nav
+│   │   └── pages/          # Add Products, Orders, Lists
+└── backend/                # Node.js / Express Server
+    ├── config/             # DB & Cloudinary configs
+    ├── controller/         # Auth, Cart, Order, Product logic
+    ├── model/              # MongoDB Schemas
+    └── middleware/         # Auth verification, Multer
